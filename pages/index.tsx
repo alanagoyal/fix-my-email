@@ -70,14 +70,13 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Email Fixer Uper</title>
+        <title>Fix My Email</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Edit any email in seconds
+          Improve any email in seconds
         </h1>
         <p className="text-slate-500 mt-5">Based on @nutlope's twitter bio generator</p>
         <br></br>
@@ -109,7 +108,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "e.g. Senior Developer Advocate @vercel. Tweeting about web development, AI, and React / Next.js. Writing nutlope.substack.com."
+              "e.g. Hi Max, I'm unable to make the meeting at the scheduled time. Please let me know if we can reschedule for sometime next week. Otherwise, if urgent, do you have some time this evening?"
             }
           />
           <div className="flex mb-5 items-center space-x-3">

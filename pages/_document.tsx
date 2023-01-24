@@ -8,14 +8,14 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Generate alternatives for your email in seconds."
+            content="Generate variations of any email in seconds."
           />
           <meta property="og:site_name" content="twitterbio.com" />
           <meta
             property="og:description"
-            content="Generate your next Twitter bio in seconds."
+            content="Generate variations of any email in seconds."
           />
-          <meta property="og:title" content="Twitter Bio Generator" />
+          <meta property="og:title" content="Fix My Email" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Twitter Bio Generator" />
           <meta
