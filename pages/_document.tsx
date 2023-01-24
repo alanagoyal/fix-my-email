@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Generate your next Twitter bio in seconds."
+            content="Generate alternatives for your email in seconds."
           />
           <meta property="og:site_name" content="twitterbio.com" />
           <meta
@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="Twitter Bio Generator" />
           <meta
             name="twitter:description"
-            content="Generate your next Twitter bio in seconds."
+            content="Generate an alternative to your email in seconds."
           />
           <meta
             property="og:image"

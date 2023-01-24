@@ -1,8 +1,6 @@
-# [TwitterBio.com](https://www.twitterbio.com/)
+# Fix my email ✉️
 
-This project generates Twitter bios for you using AI.
-
-[![Twitter Bio Generator](./public/screenshot.png)](https://www.twitterbio.com)
+This project is an adaptation of Nutlope's [Twitter Bio Generator](https://github.com/Nutlope/twitterbio). Instead of generating a Twitter Bio, this application allows you to paste an email and ask the AI to give you variations based on a particular vibe (professional, casual, kind, or short). 
 
 ## How it works
 
