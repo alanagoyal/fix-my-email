@@ -17,18 +17,18 @@ class MyDocument extends Document {
           />
           <meta property="og:title" content="Fix My Email" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Twitter Bio Generator" />
+          <meta name="twitter:title" content="Fix My Email" />
           <meta
             name="twitter:description"
             content="Generate an alternative to your email in seconds."
           />
           <meta
             property="og:image"
-            content="https://base-case-images.s3.us-west-1.amazonaws.com/b.png"
+            content="https://fix-my-email.vercel.app/og-image.png"
           />
           <meta
             name="twitter:image"
-            content="https://base-case-images.s3.us-west-1.amazonaws.com/b.png"
+            content="https://fix-my-email.vercel.app/og-image.png"
           />
         </Head>
         <body>
