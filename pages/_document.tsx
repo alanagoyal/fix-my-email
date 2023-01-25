@@ -24,11 +24,11 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://twitterbio.com/og-image.png"
+            content="https://base-case-images.s3.us-west-1.amazonaws.com/b.png"
           />
           <meta
             name="twitter:image"
-            content="https://twitterbio.com/og-image.png"
+            content="https://base-case-images.s3.us-west-1.amazonaws.com/b.png"
           />
         </Head>
         <body>
