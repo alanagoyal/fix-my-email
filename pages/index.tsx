@@ -162,8 +162,7 @@ const Home: NextPage = () => {
                           <div
                             className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                             onClick={() => {
-                              console.log(generatedBio)
-                              window.location.href = `mailto:alana@basecase.vc?subject=&body=${generatedBio}`
+                              // window.location.href = `mailto:alana@basecase.vc?subject=&body=${generatedBio}`
                               navigator.clipboard.writeText(generatedBio);
                               toast("Email copied to clipboard", {
                                 icon: "✂️",
