@@ -20,7 +20,7 @@ const handler = async (req: NextRequest): Promise<Response> => {
 
   const payload: OpenAIStreamPayload = {
     model: "gpt-4o-mini",
-    prompt,
+    messages: [{ role: "user", content: prompt }],
     temperature: 0.7,
     top_p: 1,
     frequency_penalty: 0,
@@ -30,8 +30,13 @@ const handler = async (req: NextRequest): Promise<Response> => {
     n: 1,
   };
 
-  const stream = await OpenAIStream(payload);
-  return new Response(stream);
+  try {
+    const stream = await OpenAIStream(payload);
+    return new Response(stream);
+  } catch (error) {
+    console.error("Error in OpenAI stream:", error);
+    return new Response("Error processing the request", { status: 500 });
+  }
 };
 
 export default handler;

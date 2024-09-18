@@ -15,17 +15,14 @@ const Home: NextPage = () => {
   const [bio, setBio] = useState("");
   const [vibe, setVibe] = useState<VibeType>("Professional");
   const [generatedBios, setGeneratedBios] = useState<String>("");
-
-  console.log("Streamed response: ", generatedBios);
-
   const prompt =
     vibe === "Short"
-      ? `Generate 2 emails that are short, consise, and to the point clearly labeled "1." and "2.". Make sure each generated email is around the same length and base it on this context: ${bio}${
+      ? `Generate 2 emails that are short, concise, and to the point clearly labeled "1." and "2.". Make sure each generated email is around the same length and base it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
-        }`
+        } Use plaintext in your response.`
       : `Generate 2 ${vibe} emails clearly labeled "1." and "2.". Make sure each generated email is around the same length and base it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
-        }`;
+        } Make your response in plaintext.`;
 
   const generateBio = async (e: any) => {
     e.preventDefault();
@@ -40,7 +37,6 @@ const Home: NextPage = () => {
         prompt,
       }),
     });
-    console.log("Edge function returned.");
 
     if (!response.ok) {
       throw new Error(response.statusText);
